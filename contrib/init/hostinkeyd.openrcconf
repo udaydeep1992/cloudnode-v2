@@ -1,0 +1,26 @@
+# /etc/conf.d/cloudenoded: config file for /etc/init.d/cloudenoded
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/cloudenode/cloudenode.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/cloudenoded"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/cloudenoded.pid"
+
+# Where to write cloudenoded data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/cloudenoded"
+
+# User and group to own cloudenoded process
+#BITCOIND_USER="cloudenode"
+#BITCOIND_GROUP="cloudenode"
+
+# Path to cloudenoded executable
+#BITCOIND_BIN="/usr/bin/cloudenoded"
+
+# Nice value to run cloudenoded under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

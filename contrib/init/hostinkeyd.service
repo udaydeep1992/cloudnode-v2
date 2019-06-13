@@ -1,0 +1,26 @@
+[Unit]
+Description=Cloudenode's distributed currency daemon
+After=network.target
+
+[Service]
+User=cloudenode
+Group=cloudenode
+
+Type=forking
+PIDFile=/var/lib/cloudenoded/cloudenoded.pid
+
+ExecStart=/usr/bin/cloudenoded -daemon -pid=/var/lib/cloudenoded/cloudenoded.pid \
+          -conf=/etc/cloudenode/cloudenode.conf -datadir=/var/lib/cloudenoded
+
+ExecStop=-/usr/bin/cloudenode-cli -conf=/etc/cloudenode/cloudenode.conf \
+         -datadir=/var/lib/cloudenoded stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

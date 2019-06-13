@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Cloudenode
+Comment=Cloudenode P2P Cryptocurrency
+Comment[fr]=Cloudenode, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Cloudenode, eşten eşe kriptografik sanal para birimi
+Exec=cloudenode-qt %u
+Terminal=false
+Type=Application
+Icon=cloudenode128
+MimeType=x-scheme-handler/cloudenode;
+Categories=Office;Finance;
