@@ -10,7 +10,7 @@
 
 ## CloudNode-v2 Specifications
 
-![CDS specs](https://media.discordapp.net/attachments/578352393528279042/585043556566040577/specifications.png)
+![CDS specs](https://media.discordapp.net/attachments/578352393528279042/588729141877014538/specifications-new.png)
 
 
 ## Build Instructions
